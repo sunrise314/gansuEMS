@@ -1,0 +1,18 @@
+# OpenEMS Edge RTU IEC104
+
+RTU (Remote Terminal Unit) device driver via IEC 60870-5-104 protocol.
+
+## Features
+
+- Reads telemetry (power, voltage, current, frequency, SOC) from RTU
+- Reads tele-signals (grid connection status, fault status, remote/local mode)
+- Sends AGC active power set-point commands
+- Sends AVC reactive power set-point commands
+- Sends grid connection/disconnection remote commands
+
+## Configuration
+
+Configure the IEC104 bridge first, then configure this RTU component with:
+- Bridge ID reference
+- IOA address mappings for each point
+- AGC/AVC set-point command IOA addresses

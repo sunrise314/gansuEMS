@@ -1,0 +1,20 @@
+# OpenEMS Backend Timedata IoTDB
+
+Apache IoTDB time-series storage adapter for OpenEMS Backend.
+
+## Storage Model
+
+```
+root.ems.{edgeId}.{channelName}
+```
+
+- `root.ems` - root prefix (configurable)
+- `{edgeId}` - Edge device ID (e.g. "edge0", "1")
+- `{channelName}` - Channel name (e.g. "_sum/ActivePower" converted to underscores)
+
+## Features
+
+- Batch write via Tablet
+- Historical data query
+- Support for read-only mode
+- Channel blacklisting

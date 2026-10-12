@@ -1,0 +1,21 @@
+# OpenEMS Edge Bridge IEC104
+
+IEC 60870-5-104 protocol bridge for connecting to RTU (Remote Terminal Unit) devices.
+
+## Features
+
+- TCP connection to RTU via IEC 60870-5-104 standard
+- Receives telemetry (measured values) and tele-signals (binary inputs)
+- Sends remote control commands and set-point commands (AGC)
+- Automatic reconnection on network failure
+- Channel mapping between IEC104 information objects and OpenEMS Channels
+
+## Usage
+
+1. Create a "Bridge IEC104/TCP" component with RTU IP address and port
+2. Configure point mappings (information object address -> OpenEMS channel)
+3. The bridge handles connection management, read/write cycles, and error recovery
+
+## Configuration
+
+See `ConfigTcp.java` for available configuration parameters.

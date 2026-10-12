@@ -1,0 +1,22 @@
+# OpenEMS Backend AI Agent
+
+AI extension module for OpenEMS Backend.
+
+## Components
+
+### Alert Agent
+- Subscribes to system alarm events
+- Alert storm deduplication and aggregation
+- NER (Named Entity Recognition) for fault entities
+- Root cause analysis suggestions
+
+### RAG Fault Diagnosis
+- Document ingestion and chunking
+- Vector store integration
+- Retrieval-augmented generation for fault diagnosis
+- Diagnosis results feedback to business database
+
+## Event Bus Integration
+
+Uses OpenEMS internal OSGi EventAdmin for event-driven communication.
+No external MQTT/EMQX required for core integration.
